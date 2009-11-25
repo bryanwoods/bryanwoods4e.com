@@ -8,6 +8,11 @@
     %meta{:name=>"author", :content=>"Bryan Woods"}
     %meta{:name=>"description", :content=>"Personal website of Bryan Woods, Brooklyn, New York Ruby on Rails software developer."}
     %meta{:name=>"keywords", :content=>"bryan, woods, bryan woods, ruby, developer, rails, ruby on rails, programmer, new york, ny, brooklyn, nyc, new york city"}
+    %script{:src=>'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js', :type=>'text/javascript'}
+    :javascript
+      $(document).ready(function() {
+        $("body").hide().fadeIn("slow");
+      });
     / Date: 2009-10-04
     :plain
       <!-- 
