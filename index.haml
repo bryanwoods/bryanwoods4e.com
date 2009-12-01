@@ -13,7 +13,9 @@
       $(document).ready(function() {
         $("body").hide().fadeIn("slow");
       });
-    / Date: 2009-11-25
+    / 
+      Last updated:
+      = "#{Time.now.month}/#{Time.now.day}/#{Time.now.year}"
     :plain
       <!-- 
       	 _   _   ___  _____ _       _____  ___ _____ ___   _   _ 
@@ -59,3 +61,12 @@
         %em
           DID 
         THAT.
+    / Google Analytics
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-3114392-9");
+      pageTracker._trackPageview();
+      } catch(err) {}
