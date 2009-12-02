@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>BRYAN WOODS >> while true; print 'foreverandeverand'; end</title>
-    <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <link href='/style.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href='style.css' media='screen' rel='stylesheet' type='text/css' />
     <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
     <meta content='Bryan Woods' name='author' />
     <meta content='Personal website of Bryan Woods, Brooklyn, New York Ruby on Rails software developer.' name='description' />
@@ -18,7 +18,7 @@
     </script>
     <!--
       Last updated:
-      12/1/2009
+      12/2/2009
     -->
     <!-- 
     	 _   _   ___  _____ _       _____  ___ _____ ___   _   _ 
@@ -72,16 +72,15 @@
     <!-- Google Analytics -->
     <script type='text/javascript'>
       //<![CDATA[
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      //]]>
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try {
-        var pageTracker = _gat._getTracker("UA-3114392-9");
-        pageTracker._trackPageview();
-        } catch(err) {}
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3114392-9']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script');
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          ga.setAttribute('async', 'true');
+          document.documentElement.firstChild.appendChild(ga);
+        })();
       //]]>
     </script>
   </body>
